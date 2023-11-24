@@ -14,7 +14,7 @@
     <?php wp_head(); ?>
 </head>
 <body>
-<iframe src="https://control.giaiphapweb.vn/cart.php?a=add&domain=register&query=<?= $_REQUEST["query"] ?? ""; ?>"
+<iframe src="https://my.giaiphapweb.vn/cart.php?a=add&domain=register&query=<?= $_REQUEST["query"] ?? ""; ?>"
         style="
         position: fixed;
         top: 0px;
