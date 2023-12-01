@@ -24,6 +24,11 @@ add_action('wp_enqueue_scripts', function(){
 		wp_register_script('book-givingaway-event', get_stylesheet_directory_uri() . '/js/book-givingaway-event.js', array('jquery'), '0.0.1', true);
 		wp_enqueue_script('book-givingaway-event');
 	}
+
+    if (is_front_page()) {
+        wp_register_script('front-page', get_stylesheet_directory_uri() . '/js/front-page.js', array('jquery'), '0.0.3', true);
+        wp_enqueue_script('front-page');
+    }
 });
 
 // JS for admin dashboard
