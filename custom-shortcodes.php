@@ -154,8 +154,8 @@ add_shortcode('hosting-packages', function(){
 		$shortcode_content .= $card['regular_price'] .'</span> đ/tháng</p></div></div><div class="host-benefits"><ul><li><strong>';
 		$shortcode_content .= $card['storage_space'] .' GB</strong> SSD lưu trữ</li><li>';
 		$shortcode_content .= $card['core'] .' vCore CPU</li><li>';
-		$shortcode_content .= $card['ram'] .' GB Ram</li><li>Không giới hạn băng thông</li><li>Không giới hạn tên miền</li><li>Không giới hạn Idones</li><li>Backup hàng ngày</li><li><strong>Tối ưu miễn phí ';
-		$shortcode_content .= $card['page_optimize'] .' website</strong></li></ul></div><div class="button-container"><a href="/dang-ky-ten-mien/" class="gradient-button">Đăng ký ngay</a></div></div>';
+		$shortcode_content .= $card['ram'] .' GB Ram</li><li>Không giới hạn băng thông</li><li>Không giới hạn tên miền</li><li>Không giới hạn Inodes</li><li>Backup hàng ngày</li><li><strong>Tối ưu miễn phí ';
+		$shortcode_content .= $card['page_optimize'] .' website</strong></li></ul></div><div class="button-container"><a href="' . ($card['link'] ?? '/dang-ky-ten-mien/') . '" class="gradient-button">Đăng ký ngay</a></div></div>';
 		$shortcode_content .= '[/col]';
 	}
 	return do_shortcode('[row style="collapse" class="hosting-packages-row"]' . $shortcode_content . "[/row]");
